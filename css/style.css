@@ -123,7 +123,7 @@ Announcement Bar
 
 /*
 =============
-Menu Navigation
+Header
 =============
 */
 
@@ -140,13 +140,11 @@ Menu Navigation
 .logo {
   order: 1;
   flex-grow: 1;
-  width: 50%;
 }
 
 .toggle {
   order: 2;
-  flex-grow: 1;
-  width: 50%;
+  width: 2.4rem;
 }
 
 .menu {
@@ -188,12 +186,17 @@ Menu Navigation
 
 .menu,
 .cta {
-  display: none;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 2s;
 }
 
 .active .menu,
 .active .cta {
-  display: block;
+  height: auto;
+  opacity: 1;
+  overflow: visible;
 }
 
 .cta-link,
