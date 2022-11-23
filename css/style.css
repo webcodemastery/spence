@@ -186,17 +186,12 @@ Header
 
 .menu,
 .cta {
-  height: 0;
-  opacity: 0;
-  overflow: hidden;
-  transition: all 2s;
+  display: none;
 }
 
 .active .menu,
 .active .cta {
-  height: auto;
-  opacity: 1;
-  overflow: visible;
+  display: block;
 }
 
 .cta-link,
