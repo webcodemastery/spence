@@ -181,7 +181,6 @@ Header
 }
 
 .menu ul li a {
-  font-weight: 700;
   margin: 1.5rem 0;
   font-size: 1.8rem;
 }
@@ -295,6 +294,7 @@ Hero
 .hero-description {
   font-size: 1.8rem;
   margin-bottom: 1.6rem;
+  color: var(--color-body);
 }
 
 .hero-list {
@@ -311,6 +311,7 @@ Hero
   background-position: 0 50%;
   padding-left: 3rem;
   margin-bottom: 0.8rem;
+  color: var(--color-body);
 }
 
 .hero-cta {
@@ -386,14 +387,6 @@ Hero
   .hero-heading {
     font-size: 5.6rem;
     line-height: 6.8rem;
-  }
-
-  .hero-description {
-    color: var(--color-body);
-  }
-
-  .hero-list li {
-    color: var(--color-body);
   }
 
   .hero-img-container {
