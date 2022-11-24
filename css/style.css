@@ -372,6 +372,7 @@ Hero
   .hero {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .hero-info {
@@ -398,5 +399,9 @@ Hero
   .hero-img-container {
     order: 2;
     width: 42.5rem;
+  }
+
+  .hero-img-container {
+    margin-bottom: 0;
   }
 }
