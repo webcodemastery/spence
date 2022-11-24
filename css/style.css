@@ -278,7 +278,7 @@ Hero
 
 .hero-wrapper {
   background: var(--color-secondary);
-  padding: 2rem 0;
+  padding: 2rem 0 4rem 0;
 }
 
 .hero-img-container {
@@ -396,5 +396,130 @@ Hero
 
   .hero-img-container {
     margin-bottom: 0;
+  }
+}
+
+/*
+=============
+Logos
+=============
+*/
+
+.logos {
+  display: flex;
+  padding: 4rem 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logos img {
+  width: 30%;
+  flex-grow: 1;
+  display: block;
+  padding: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .logos img {
+    width: 25%;
+    display: block;
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .logos {
+    flex-wrap: nowrap;
+  }
+
+  .logos img {
+    min-width: 12%;
+    display: block;
+  }
+}
+
+/*
+=============
+Escrow
+=============
+*/
+
+.escrow {
+  background: var(--color-secondary);
+  border-radius: 10px;
+}
+
+.escrow-heading {
+  padding: 3.9rem 4rem 0.8rem 4rem;
+  font-size: 3.6rem;
+  line-height: 4.3rem;
+}
+
+.escrow-description {
+  padding: 0 4rem 1.6rem 4rem;
+  color: var(--color-body);
+}
+
+.escrow-link {
+  padding: 0 4rem;
+  font-weight: 700;
+  color: var(--color-body);
+  text-decoration: underline;
+}
+
+.escrow-img-container img {
+  margin-top: -4rem;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .escrow-heading {
+    padding: 6.7rem 9.9rem 0.8rem 9.9rem;
+  }
+
+  .escrow-description {
+    padding: 0 9.9rem 1.6rem 9.9rem;
+  }
+
+  .escrow-link {
+    padding: 0 9.9rem;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .escrow-wrapper {
+    margin-bottom: 2.4rem;
+  }
+
+  .escrow {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem 0 9.9rem;
+  }
+
+  .escrow-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .escrow-heading,
+  .escrow-description,
+  .escrow-link {
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .escrow-img-container {
+    width: 50%;
+    overflow: hidden;
+  }
+
+  .escrow-img-container img {
+    margin-bottom: 0;
+    margin-bottom: -6rem;
+    margin-top: -6rem;
   }
 }
