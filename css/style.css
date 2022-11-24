@@ -367,3 +367,36 @@ Hero
     margin-right: 1.6rem;
   }
 }
+
+@media screen and (min-width: 1140px) {
+  .hero {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero-info {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 59.7rem;
+  }
+
+  .hero-heading {
+    font-size: 5.6rem;
+    line-height: 6.8rem;
+  }
+
+  .hero-description {
+    color: var(--color-body);
+  }
+
+  .hero-list li {
+    color: var(--color-body);
+  }
+
+  .hero-img-container {
+    order: 2;
+    width: 42.5rem;
+  }
+}

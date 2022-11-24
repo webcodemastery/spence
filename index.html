@@ -52,7 +52,18 @@
       <div class="container">
         <div class="hero">
           <div class="hero-img-container">
-            <img src="./images/Hero Image (Mobile).png" />
+            <picture>
+              <source
+                media="(min-width: 1140px)"
+                srcset="./images/hero@x3.png"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./images/hero@x2.png"
+              />
+
+              <img src="./images/hero.png" />
+            </picture>
           </div>
           <article class="hero-info">
             <h1 class="hero-heading">
