@@ -342,4 +342,28 @@ Hero
   background: var(--color-primary);
   color: var(--color-white);
   font-weight: 700;
+  border: none;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-cta {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .hero-cta input {
+    margin-bottom: 0;
+  }
+
+  .hero-cta input::placeholder {
+    line-height: 2.7rem;
+  }
+
+  .hero-cta input,
+  .hero-cta button {
+    flex-grow: 0;
+    padding: 1.6rem 2.4rem;
+    margin-right: 1.6rem;
+  }
 }
