@@ -17,6 +17,7 @@ Global
   --color-body: #5a5444;
   --color-heading: #292929;
   --color-border: #b1b1b1;
+  --color-grey: #adadad;
   --font-primary: "Cabin", sans-serif;
   --font-secondary: "Source Sans Pro", sans-serif;
   --color-white: #ffffff;
@@ -129,7 +130,7 @@ Header
 
 .header-wrapper {
   background: var(--color-secondary);
-  padding: 4rem 0;
+  padding: 4rem 0 2rem 0;
 }
 
 .header {
@@ -267,4 +268,74 @@ Header
   .cta-btn {
     display: inline-block;
   }
+}
+
+/*
+=============
+Hero
+=============
+*/
+
+.hero-wrapper {
+  background: var(--color-secondary);
+  padding: 2rem 0;
+}
+
+.hero-img-container {
+  margin-bottom: 4rem;
+}
+
+.hero-heading {
+  font-size: 3.6rem;
+  line-height: 4.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.hero-description {
+  font-size: 1.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.hero-list {
+  font-size: 1.8rem;
+  font-weight: 600;
+  list-style-type: none;
+  margin-bottom: 2.4rem;
+}
+
+.hero-list li {
+  background: url("../icons/Checkmark.svg");
+  background-repeat: no-repeat;
+  display: block;
+  background-position: 0 50%;
+  padding-left: 3rem;
+  margin-bottom: 0.8rem;
+}
+
+.hero-cta {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.hero-cta input,
+.hero-cta button {
+  margin-right: 1.6rem;
+  padding: 1.6rem 2.4rem;
+  border-radius: 0.5rem;
+}
+
+.hero-cta input {
+  border: 1px solid var(--color-border);
+}
+
+.hero-cta input::placeholder {
+  font-weight: 400;
+  color: var(--color-grey);
+  font-size: 1.8rem;
+}
+
+.hero-cta button {
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-weight: 700;
 }
